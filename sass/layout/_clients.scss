@@ -1,0 +1,23 @@
+.clients__item {
+  flex-basis: calc(100% / 6 - var(--card-gap));
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
+}
+
+.clients__card {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  transition: color 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  color: var(--icon-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--brand-color);
+    color: var(--brand-color);
+  }
+}

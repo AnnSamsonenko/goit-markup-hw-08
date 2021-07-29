@@ -1,0 +1,20 @@
+.logo {
+  display: inline-block;
+  font-family: var(--secondary-family);
+  @include font(26px, 700, 31px);
+  letter-spacing: var(--common-spacing);
+  color: var(--logo-color);
+}
+.logo--blue {
+  color: var(--brand-color);
+}
+.head__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
