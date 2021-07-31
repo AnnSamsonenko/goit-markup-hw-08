@@ -1,10 +1,10 @@
 .galery__card {
-  flex-basis: calc(100% / 3 - var(--card-gap));
-  margin-left: var(--card-gap);
-  margin-top: var(--card-gap);
   border-right: 1px solid var(--galery-border-color);
   border-bottom: 1px solid var(--galery-border-color);
   border-left: 1px solid var(--galery-border-color);
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .galery__link {
@@ -60,4 +60,23 @@
   @include font($fs: 16px, $lh: 30px);
   letter-spacing: var(--common-spacing);
   color: var(--shadow-color);
+}
+
+@media screen and (min-width: 768px) {
+  .galery__card {
+    flex-basis: calc(100% / 2 - var(--card-gap));
+    margin-left: var(--card-gap);
+    margin-top: var(--card-gap);
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .galery__card {
+    flex-basis: calc(100% / 3 - var(--card-gap));
+    margin-left: var(--card-gap);
+    margin-top: var(--card-gap);
+  }
 }
