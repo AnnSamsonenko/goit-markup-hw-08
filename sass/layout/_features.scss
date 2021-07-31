@@ -20,6 +20,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .features {
+    padding-bottom: 60px;
+  }
+
   .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
