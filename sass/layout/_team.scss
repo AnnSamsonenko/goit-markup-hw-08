@@ -31,13 +31,13 @@
   color: var(--shadow-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .team__card:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .team__thumb {
     padding-bottom: 24px;
   }

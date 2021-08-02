@@ -40,7 +40,10 @@
   }
   &__container {
     position: relative;
-    min-height: 796px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
@@ -73,9 +76,6 @@
 .mobile-menu__item {
   &:not(:last-child) {
     margin-bottom: 32px;
-  }
-  &:last-child {
-    margin-bottom: 302px;
   }
 }
 

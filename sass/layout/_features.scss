@@ -19,11 +19,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .features {
-    padding-bottom: 60px;
-  }
-
+@media screen and (max-width: 767px) {
   .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -37,6 +33,12 @@
     flex-basis: calc(100% / 2 - var(--card-gap));
     margin-left: var(--card-gap);
     margin-top: var(--card-gap);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .features {
+    padding-bottom: 60px;
   }
 }
 
